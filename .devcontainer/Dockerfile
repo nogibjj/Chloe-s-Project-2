@@ -11,6 +11,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 # USER codespace
 
 RUN apk update && apk add bash
-
 WORKDIR /app
-COPY bash2048.sh /app
+COPY /workspaces/Chloe-s-Project-2/bash2048.sh /app
+CMD bash bash2048.bash
